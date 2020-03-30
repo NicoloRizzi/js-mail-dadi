@@ -8,14 +8,16 @@
  var numCasuale = 0;
 
  //CREO UNA VARIABILE CHE GENERA NUMERI CASUALI
-punteggioUtente = Math.floor((Math.random()*6) + 1);
+punteggioUtente = Math.floor((Math.random()* 6) + 1);
 alert(punteggioUtente);
 punteggioPc = Math.floor((Math.random() * 6) + 1);
-alert(punteggioPc)
+alert(punteggioPc);
 
 if (punteggioUtente > punteggioPc) {
     alert("Punteggio dell'Utente vince");
 
+} else if (punteggioUtente == punteggioPc) {
+    alert('Parità');
 } else {
-    alert ('Punteggio del Pc vince');
+    alert ('Pc vince');
 }
