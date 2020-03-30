@@ -9,4 +9,13 @@
 
  //CREO UNA VARIABILE CHE GENERA NUMERI CASUALI
 punteggioUtente = Math.floor((Math.random()*6) + 1);
+alert(punteggioUtente);
 punteggioPc = Math.floor((Math.random() * 6) + 1);
+alert(punteggioPc)
+
+if (punteggioUtente > punteggioPc) {
+    alert("Punteggio dell'Utente vince");
+
+} else {
+    alert ('Punteggio del Pc vince');
+}
