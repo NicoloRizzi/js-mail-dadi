@@ -35,4 +35,3 @@ if (userFound === false) {
     console.log(datoInput + " Utente non trovato");
     alert(datoInput + " Utente non trovato");
 }
-
