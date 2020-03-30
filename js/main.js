@@ -6,6 +6,8 @@
  * 1b)CONFRONTA IL DATO CON L'ARRAY GIA' ESISTENTE
  */
 
+
+ 
 // OTTENGO IL DATO IN INPUT
  var datoInput = prompt('Fornisci la mail di accesso')
 
@@ -19,17 +21,22 @@ var mail = ['michele@boolean.careers','fabio@boolean.careers','roberto@boolean.c
 console.table(mail);
 
 // CREO IL CICLO FOR PER ARRIVARE FINO ALL'ULTIMO ELEMENTO DELL'ARRAY E CREO LA CONDIZIONE DI CONTROLLO
-
-for (i = 0; i < mail.length; i++ ) {
+var userFound = false;
+for ( var i = 0; i < mail.length; i++ ) {
     var elemento = mail[i];
-    console.table(elemento);
-
+    //console.log(elemento);
     if (datoInput == elemento) {
-        console.log('Ok');
-        
-    } else {
-        console.log('No');
-        
-    }
+        alert(datoInput + " E' presente nella lista")
+        console.log('Si')
+        userFound = true;
+
+    } 
+}
+
+if (userFound === true) {
+    console.log('Utente trovato');
+    
+} else {
+    console.log('Utente non trovato');
     
 }
